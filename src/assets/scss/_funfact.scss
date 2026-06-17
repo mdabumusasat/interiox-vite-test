@@ -1,0 +1,217 @@
+/*** 
+
+====================================================================
+    Funfact Section
+====================================================================
+
+***/
+
+.funfact-section {
+  padding: 70px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 79px 0 29px;
+  }
+  .outer-box {
+    border-bottom: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+    padding-bottom: 91px;
+    @include media-breakpoint-down(lg){
+      padding-bottom: 40px;
+    }
+  }
+  .fact-counter {
+    margin: 0 -45px 0 -90px;
+    @include media-breakpoint-down(xxl){
+      margin: 0 0 0 -45px;
+    }
+    @include media-breakpoint-down(sm){
+      margin: 0;
+    }
+  }
+}
+
+.counter-block-one {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    .count-box {
+      color: rgba(var(--theme-color1-rgb), .30);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 128px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: var(--theme-color-white);
+      font-family: var(--text-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      margin-bottom: 0;
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      @include media-breakpoint-down(xl){
+        width: 100%;
+        right: 0;
+        text-align: center;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Funfact Section Two
+====================================================================
+
+***/
+
+.funfact-section-two {
+  padding: 120px 0 112px;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 79px 0 69px;
+  }
+  .fact-counter {
+    margin: 0 -85px 0 -90px;
+    @include media-breakpoint-down(xl){
+      margin: 0 -35px 0 -30px;
+    }
+    @include media-breakpoint-down(lg){
+      margin: 0;
+    }
+  }
+}
+.counter-block-two {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    .count-box {
+      color: rgba(var(--theme-color1-rgb), .4);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 128px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: var(--theme-color-white);
+      font-family: var(--text-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      position: absolute;
+      text-align: center;
+      top: 35%;
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Funfact Section Three
+====================================================================
+
+***/
+
+.funfact-section-three {
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.counter-block-three {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    position: relative;
+    padding: 58px 60px 60px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(md){
+      padding: 60px 15px;
+    }
+    .bg-image {
+      &:before {
+        background: var(--gradient-3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        @include transition(all 300ms ease);
+      }
+    }
+    .count-box {
+      color: var(--theme-color-white);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 1;
+      position: relative;
+      margin-bottom: 0;
+    }
+    .counter-title {
+      color: var(--theme-color-white);
+      margin-bottom: 16px;
+      margin-top: 20px;
+      position: relative;
+      @include media-breakpoint-down(md){
+        font-size: 32px;
+      }
+    }
+    .counter-text {
+      color: var(--theme-color-white);
+      line-height: 30px;
+      position: relative;
+      @include media-breakpoint-down(sm){
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
