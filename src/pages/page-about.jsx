@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '../layouts/Layout';
 import PageTitle from "../section/PageTitle";
 import About from "../section/Home1/About";
-import Marquee from "../section/about/Marquee";
+import Marquee from "../section/About/Marquee";
 import Video from "../section/Home1/Video";
 import Teams from "../section/Home1/Teams";
 
